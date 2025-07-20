@@ -1,60 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Schedule for TechCon 2024</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - TechCon 2024</title>
+  <style>
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+    }
+  </style>
 </head>
-
 <body>
 
   <!-- Header -->
   <header>
-    <h1>Schedule for TechCon 2024</h1>
+    <h1>Contact Us</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
         <li><a href="register.html">Register</a></li>
-        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <table border="1">
-      <caption>Detailed Schedule of Events for TechCon 2024</caption>
-      <thead>
-        <tr>
-          <th scope="col">Time</th>
-          <th scope="col">Session</th>
-          <th scope="col">Speaker</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>09:00 AM - 10:00 AM</td>
-          <td>Opening Keynote: The Future of Tech</td>
-          <td>Dr. Ada Sparks</td>
-        </tr>
-        <tr>
-          <td>10:15 AM - 11:00 AM</td>
-          <td>Cybersecurity in 2024</td>
-          <td>Elijah Moore</td>
-        </tr>
-        <tr>
-          <td>11:15 AM - 12:00 PM</td>
-          <td>Open Source: Powering Innovation</td>
-          <td>Sophia Lin</td>
-        </tr>
-      </tbody>
-    </table>
+    <!-- Contact Information -->
+    <section>
+      <h2>Contact Information</h2>
+      <p>Email us at: <a href="mailto:email@example.com">email@example.com</a></p>
+      <p>Follow us on social media:</p>
+      <ul>
+        <li><a href="https://facebook.com/TechCon2024" target="_blank">Facebook</a></li>
+        <li><a href="https://twitter.com/TechCon2024" target="_blank">Twitter</a></li>
+        <li><a href="https://instagram.com/TechCon2024" target="_blank">Instagram</a></li>
+      </ul>
+    </section>
+
+    <!-- Embedded Google Map -->
+    <section>
+      <h2>Our Location</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1984.0595363920326!2d-0.1277582840216072!3d51.5073500796358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b3333c3c24b%3A0x70b4667ec3f92993!2sBig%20Ben!5e0!3m2!1sen!2suk!4v1614664479097!5m2!1sen!2suk"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+    </section>
+
+    <!-- Contact Form -->
+    <section>
+      <h2>Send Us a Message</h2>
+      <form>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <div>
+          <button type="submit">Send Message</button>
+        </div>
+      </form>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p> Copyright. &copy; 2024 TechCon. All rights reserved.</p>
+    <p>&copy; 2024 TechCon. All rights reserved.</p>
   </footer>
-</body>
 
+</body>
 </html>
